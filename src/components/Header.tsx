@@ -39,7 +39,7 @@ const Header: React.FC = () => {
                     </Slider>
                 </div>
             </div>
-            <div className='flex justify-between items-center p-3'>
+            <div className='flex justify-between items-center py-3'>
                 <div className='flex justify-center items-center w-full'>
                     <img className='w-192 h-36 Res0.1:w-106 Res0.1:h-20' src={clariFonLogo} alt="" />
                 </div>

@@ -14,25 +14,27 @@ function Home() {
                     <h1 className="m-0 text-48 Res0.1:text-32">Wait ! your order in progress.</h1>
                     <p className="m-0 text-24 text-LoremP Res0.1:text-16">Lorem ipsum dolor sit amet, consectetur adipiscing </p>
                 </div>
+                {/* cheek */}
                 <div className="w-full my-4 h-40 flex flex-row justify-center items-center">
                     <ChekItems src={CheckLogo} text={"Step 1 : Cart Review"} textRes={"Cart Review"} />
-                    <ChekItems src={CheckLogo} text={"Step 2 : Checkout"} textRes={"Checkout"}/>
+                    <ChekItems src={CheckLogo} text={"Step 2 : Checkout"} textRes={"Checkout"} />
                     <div className="flex mx-5 flex-row Res-0:flex-col justify-start items-center">
                         <img src={Nm3Logo} alt=""
                             className="mr-2 w-40 h-40 Res2:w-20 Res2:h-20" />
                         <b className="text-20 ResB:hidden">Step 3 : Special Offer</b>
                         <b className="text-20 Res2:text-12 hidden ResB:block">Special Offer</b>
                     </div>
-                    <ChekItems src={Nm4Logo} text={"Step 4 : Confirmation"} textRes={"Confirmation"}/>
+                    <ChekItems src={Nm4Logo} text={"Step 4 : Confirmation"} textRes={"Confirmation"} />
                 </div>
-                <div className="flex flex-row Res0:flex-col justify-center items-center">
+                {/* body */}
+                <div className="flex w-auto  flex-row Res0:flex-col justify-center items-center">
 
-                    <div className="mr-10 flex flex-col justify-center items-center w-575">
+                    <div className="mr-10 Res0:hidden Res0:mr-0 flex flex-col justify-center items-center Res1:w-auto w-575">
                         <div className="flex justify-center items-center mb-3">
                             {/* img */}
-                            <img className="w-575 h-591 Res0.1:w-320 Res0.1:h-328"  src={Img4Logo} alt="" />
+                            <img className="w-575 h-591" src={Img4Logo} alt="" />
                         </div>
-                        <div className="Res0:hidden p-24 flex flex-col justify-start items-center w-full">
+                        <div className=" p-24 flex flex-col justify-start items-center w-full">
                             <div className="flex mb-2 justify-start items-center w-full">
                                 <Profile />
                             </div>
@@ -46,20 +48,21 @@ function Home() {
                         </div>
                     </div>
                     {/*  */}
-                    <div className="flex mb-20 flex-col justify-center items-center w-550">
+                    <div className="flex mb-20 flex-col justify-center items-center Res1:w-441 Res3:w-320 w-550">
                         <div className="w-full">
-                            <h2 className="m-0 text-32">
+                            <h2 className="m-0 text-32 Res0.1:text-24 Res0.1:text-center">
                                 <span className="text-blueText" >ONE TIME ONLY</span> special price for 6 extra Clarifion for only <span className="text-blueText">$14 each</span> ($84.00 total!)
                             </h2>
                         </div>
+                        <img className="hidden Res0.1:block w-320 h-328" src={Img4Logo} alt="" />
                         <Comp5 />
                         <div className="flex flex-col justify-start items-center w-full">
                             <Comp6 child={<p>Negative Ion Technology may <b>help with allergens</b></p>} />
                             <Comp6 child={<p>Designed for <b>air rejuvenation</b></p>} />
                             <Comp6 child={<p><b>Perfect for every room</b> in all types of places.</p>} />
                         </div>
-                        <div className="flex justify-start items-center w-542 py-16 px-12">
-                            <div className="flex flex-row justify-center items-center w-441">
+                        <div className="flex justify-start items-center w-542 py-16 px-12 Res1:px-0 Res1:w-auto">
+                            <div className="flex flex-row justify-center items-center w-441 Res1:w-auto">
                                 <img width={32} height={32} src={GroupLogo} alt="" />
                                 <p className="text-16 ml-3">Save <span className="text-hf2">53%</span> and get <span className="text-hf2">6 extra Clarifision</span> for only <span className="text-hf2">$14 Each.</span></p>
                             </div>
@@ -67,7 +70,7 @@ function Home() {
                         {/* comp7 */}
                         <div className="flex mb-2 flex-row justify-start items-center w-full">
                             <img width={88} height={88} src={Img6Logo} alt="" />
-                            <div className="flex justify-start items-center w-400">
+                            <div className="flex justify-start items-center w-400 Res2:w-auto">
                                 <p className="ml-3 text-16 text-LoremP ">
                                     If you are not completely thrilled with your Clarifion - We have a <b>30 day satisfaction guarantee</b>. Please refer to our return policy at the bottom of the page for more details. Happy Shopping!
                                 </p>

@@ -71,34 +71,48 @@ export const Stars: React.FC<Size> = ({ Width, Heigth }) => {
 // comp5
 export const Comp5: React.FC = ({ }) => {
     return (
-        <div className="flex flex-row justify-center items-center w-full">
-            <img width={134} height={134} src={Comp5Item} alt="" />
-            <div className="p-3 ml-2 flex flex-col justify-start items-center w-full">
-                <div className="flex flex-row justify-between items-center w-full">
-                    <h3 className="text-20 font-bold">Clarifion Air Ionizer</h3>
-                    <div className="flex flex-row justify-center items-center">
-                        <p className="text-16 text-GreyClean mr-2">$182</p>
-                        <p className="text-22 text-blueText">$84</p>
+        <div className="flex flex-col justify-center items-center w-full">
+            <div className="flex flex-row justify-center items-center w-full">
+                <img src={Comp5Item} alt="" className="w-134 h-134  Res1:w-80 Res1:h-80" />
+                <div className="p-3 Res1:p-0 ml-2 flex flex-col justify-start items-center w-full">
+                    <div className="flex flex-row justify-between items-center w-full">
+                        <h3 className="text-20 Res1:text-14 font-bold">Clarifion Air Ionizer</h3>
+                        <div className="flex flex-row justify-center items-center Res1:ml-10">
+                            <p className="text-16 Res1:text-10 text-GreyClean mr-2">$182</p>
+                            <p className="text-22 Res1:text-14 text-blueText">$84</p>
+                        </div>
                     </div>
-                </div>
-                {/* stars */}
-                <div className=" flex flex-row justify-start items-center w-full">
-                    <Stars Width={18} Heigth={18} />
-                    <Stars Width={18} Heigth={18} />
-                    <Stars Width={18} Heigth={18} />
-                    <Stars Width={18} Heigth={18} />
-                    <Stars Width={18} Heigth={18} />
-                </div>
-                {/* punt and text */}
-                <div className="my-2 flex flex-row justify-start items-center w-full">
-                    <div className="w-16 mr-2 h-16 flex justify-center items-center">
-                        <div className="h-8/53 w-8/53 bg-hf2 rounded-full"></div>
+                    {/* stars */}
+                    <div className="Res0.1:hidden w-full">
+                        <div className=" flex flex-row justify-start items-center w-full ">
+                            <Stars Width={18} Heigth={18} />
+                            <Stars Width={18} Heigth={18} />
+                            <Stars Width={18} Heigth={18} />
+                            <Stars Width={18} Heigth={18} />
+                            <Stars Width={18} Heigth={18} />
+                        </div>
                     </div>
-                    <p className="text-16 text-greyBlue">12 left in Stock</p>
+                    <div className="hidden Res0.1:block w-full">
+                        <div className=" flex flex-row justify-start items-center w-full">
+                            <Stars Width={12} Heigth={12} />
+                            <Stars Width={12} Heigth={12} />
+                            <Stars Width={12} Heigth={12} />
+                            <Stars Width={12} Heigth={12} />
+                            <Stars Width={12} Heigth={12} />
+                        </div>
+                    </div>
+                    {/* punt and text */}
+                    <div className="my-2 flex flex-row justify-start items-center w-full">
+                        <div className="w-16 mr-2 h-16 flex justify-center items-center">
+                            <div className="h-8/53 w-8/53 bg-hf2 rounded-full"></div>
+                        </div>
+                        <p className="text-16 Res0.1:text-12 text-greyBlue">12 left in Stock</p>
+                    </div>
+                    {/* Last text */}
+                    <p className="Res0.1:hidden text-16 text-LoremP">Simply plug a Clarifion into any standard outlet and replace bulky, expensive air purifiers with a simple.</p>
                 </div>
-                {/* Last text */}
-                <p className="text-16 text-LoremP">Simply plug a Clarifion into any standard outlet and replace bulky, expensive air purifiers with a simple.</p>
             </div>
+            <p className="hidden w-326 Res0.1:block text-12 text-center text-LoremP">Simply plug a Clarifion into any standard outlet and replace bulky, expensive air purifiers with a simple.</p>
         </div>
     )
 }
@@ -106,8 +120,9 @@ export const Comp5: React.FC = ({ }) => {
 export const Comp6: React.FC<ListProps> = ({ child }) => {
     return (
         <div className="flex my-2  flex-row justify-start w-full items-center">
-            <img width={22} height={22} src={TirkLogo} alt="" />
-            <div className="ml-2 text-16 text-LoremP">{child}</div>
+            <img className="Res3:hidden" width={22} height={22} src={TirkLogo} alt="" />
+            <img className="hidden Res3:block" width={16} height={16} src={TirkLogo} alt="" />
+            <div className="ml-2 text-16 Res3:text-12 text-LoremP">{child}</div>
         </div>
     )
 }
