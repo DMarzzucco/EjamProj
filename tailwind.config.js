@@ -15,8 +15,11 @@ export default {
         "400": "400px",
         "326":"326px",
         "320":"320px",
+        "289": "289px",
         "237": "237px",
+        "194":"194px",
         "192":"192px",
+        "180":"180px",
         "134":"134px",
         "106":"106.67px",
         "88":"88px",
@@ -28,6 +31,7 @@ export default {
         "25":"25px",
         "20":"20px",
         "16": "16px",
+        "12":"12px",
         "8/53": "8.53px",
       },
       height: {
@@ -51,13 +55,17 @@ export default {
         "12": "12px"
       },
       colors: {
+        "whiteBlue":"#EDF3FD",
         "greyBlue":"#37465A",
+        "greySky":"#CFCFCF",
         "hf": "#252F3D",
         "hf2": "#2C7EF8",
         "LoremP": "#4D5254",
         "blueText": "#2C7EF8",
         "Verify": "#5BB59A",
-        "GreyClean": "#969696"
+        "GreyClean": "#969696",
+        "redAlert":"#F82C2C",
+        "greenBt":"#59AE43",
       },
       fontSize: {
         "48": "48px",
@@ -65,6 +73,7 @@ export default {
         "24": "24px",
         "22": "22px",
         "20": "20px",
+        "18": "18px",
         "16": "16px",
         "14":"14px",
         "12": "12px",

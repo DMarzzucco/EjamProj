@@ -5,7 +5,7 @@ import CheckLogo from "../assets/Vector/GreenChek.png";
 import Nm3Logo from "../assets/Vector/Nm3.png";
 import Nm4Logo from "../assets/Vector/Nm4.png";
 
-import { ChekItems, Comp5, Comp6, Profile } from "../items/items";
+import { ChekItems, Comp5, Comp6, Comp7, Profile } from "../items/items";
 function Home() {
     return (
         <>
@@ -61,17 +61,21 @@ function Home() {
                             <Comp6 child={<p>Designed for <b>air rejuvenation</b></p>} />
                             <Comp6 child={<p><b>Perfect for every room</b> in all types of places.</p>} />
                         </div>
-                        <div className="flex justify-start items-center w-542 py-16 px-12 Res1:px-0 Res1:w-auto">
+                        {/* check  */}
+                        <div className="flex my-7 bg-whiteBlue rounded-xl justify-start items-center w-542 py-16 px-12 Res1:px-5 Res1:py-2 Res1:w-auto">
                             <div className="flex flex-row justify-center items-center w-441 Res1:w-auto">
-                                <img width={32} height={32} src={GroupLogo} alt="" />
-                                <p className="text-16 ml-3">Save <span className="text-hf2">53%</span> and get <span className="text-hf2">6 extra Clarifision</span> for only <span className="text-hf2">$14 Each.</span></p>
+                                <img className="Res1:hidden" width={32} height={32} src={GroupLogo} alt="" />
+                                <img className="Res1:block hidden" width={24} height={24} src={GroupLogo} alt="" />
+                                <p className="text-16 Res1:text-14 ml-3">Save <span className="text-hf2">53%</span> and get <span className="text-hf2">6 extra Clarifision</span> for only <span className="text-hf2">$14 Each.</span></p>
                             </div>
                         </div>
                         {/* comp7 */}
+                        <Comp7/>
                         <div className="flex mb-2 flex-row justify-start items-center w-full">
-                            <img width={88} height={88} src={Img6Logo} alt="" />
+                            <img className="Res1:hidden" width={88} height={88} src={Img6Logo} alt="" />
+                            <img className="Res1:block hidden mb-8 " width={48} height={48} src={Img6Logo} alt="" />
                             <div className="flex justify-start items-center w-400 Res2:w-auto">
-                                <p className="ml-3 text-16 text-LoremP ">
+                                <p className="ml-3 text-16 Res1:text-12 text-LoremP ">
                                     If you are not completely thrilled with your Clarifion - We have a <b>30 day satisfaction guarantee</b>. Please refer to our return policy at the bottom of the page for more details. Happy Shopping!
                                 </p>
                             </div>

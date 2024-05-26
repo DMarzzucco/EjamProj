@@ -6,6 +6,8 @@ import ArrowNext from "../assets/Vector/Arrow2.png";
 import Comp5Item from "../assets/Comp5.png";
 import TirkLogo from "../assets/Vector/tick-circle.png";
 import { ArrowsProps, HeaderProps, ListProps, Size } from "../Interfaces/Interfaces";
+import { Link } from "react-router-dom";
+import { ArrowBtn, CardsComp, LockDark } from "../assets/Img";
 
 // comp1
 export const HeaderItems: React.FC<HeaderProps> = ({ src, text }) => {
@@ -126,7 +128,36 @@ export const Comp6: React.FC<ListProps> = ({ child }) => {
         </div>
     )
 }
-
+// comp 7
+export const Comp7: React.FC = ({ }) => {
+    return (
+        <div className="flex w-full flex-col justify-center items-center">
+            <button className="bg-greenBt w-full rounded-full py-4 flex flex-row justify-center items-center">
+                <h3 className="text-20 Res3:text-14 text-white">
+                    YES - CLAIM MY DISCOUNT
+                </h3>
+                <ArrowBtn />
+            </button>
+            {/*  */}
+            <div className="py-2 rounded my-3 flex flex-row Res1:flex-col justify-center items-center w-full border">
+                {/* text */}
+                <div className="flex flex-row justify-center items-center">
+                    <p  className="text-12 text-LoremP mr-3 pr-3 border-r border-greySky ">Free shipping</p>
+                    <div className=" flex flex-row justify-center items-center w-194">
+                        <LockDark/>
+                        <p  className="ml-2 text-12 text-LoremP ">Secure 256-bit SSL encryption.</p>
+                    </div>
+                </div>
+                {/* carts */}
+                <CardsComp/>
+            </div>
+            {/*  */}
+            <Link to="#" className="text-redAlert underline text-18 Res3:text-12">
+                NO THANKS, I DON`T WANT THIS.
+            </Link>
+        </div>
+    )
+}
 // ArrowHeader
 
 export const PrevBoton: React.FC<ArrowsProps> = ({ onClick }) => {
