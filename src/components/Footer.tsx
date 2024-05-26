@@ -3,7 +3,7 @@ import { FooterItems } from "../items/items";
 
 function Footer() {
     return (
-        <footer className="bg-hf flex flex-row Res1:flex-col justify-between items-center  text-white ">
+        <footer className="bg-hf pb-3 flex flex-row Res1:flex-col justify-between items-center  text-white ">
 
             <div className=" p-3 text-16 Res1:text-12 w-full py-7 flex flex-row justify-center items-center">
                 <span className="mr-3 border-r pr-2"> Copyright (C) 2023</span>
