@@ -1,7 +1,7 @@
 export interface HeaderProps {
     src: string;
     text: string;
-    textRes?:string;
+    textRes?: string;
 }
 export interface Size {
     Width: number;
@@ -10,3 +10,5 @@ export interface Size {
 export interface ListProps {
     child: JSX.Element;
 }
+
+export type ArrowsProps = { onClick?: () => void; }

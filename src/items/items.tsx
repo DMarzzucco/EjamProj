@@ -1,14 +1,16 @@
 import ProfileImage from "../../public/Rectangle 1127.png"
 import StartLogo from "../assets/Vector/Start.png";
 import VerifyLogo from "../assets/Vector/verify 1.png";
+import ArrowPrev from "../assets/Vector/Arrow1.png";
+import ArrowNext from "../assets/Vector/Arrow2.png";
 import Comp5Item from "../assets/Comp5.png";
 import TirkLogo from "../assets/Vector/tick-circle.png";
-import { HeaderProps, ListProps, Size } from "../Interfaces/Interfaces";
+import { ArrowsProps, HeaderProps, ListProps, Size } from "../Interfaces/Interfaces";
 
 // comp1
 export const HeaderItems: React.FC<HeaderProps> = ({ src, text }) => {
     return (
-        <div className="h-22 flex flex-row justify-center items-center">
+        <div className="h-auto w-full flex flex-row justify-center items-center">
             <img height={22} width={22} src={src} alt="" />
             <span className="m-2 text-12">{text}</span>
         </div>
@@ -106,6 +108,24 @@ export const Comp6: React.FC<ListProps> = ({ child }) => {
         <div className="flex my-2  flex-row justify-start w-full items-center">
             <img width={22} height={22} src={TirkLogo} alt="" />
             <div className="ml-2 text-16 text-LoremP">{child}</div>
+        </div>
+    )
+}
+
+// ArrowHeader
+
+export const PrevBoton: React.FC<ArrowsProps> = ({ onClick }) => {
+    return (
+        <div onClick={onClick} className=" flex h-20 w-full justify-start items-center">
+            <img src={ArrowPrev} alt="" />
+        </div>
+    )
+}
+
+export const NextBoton: React.FC<ArrowsProps> = ({ onClick }) => {
+    return (
+        <div onClick={onClick} className="w-full h-20 flex justify-end items-center">
+            <img src={ArrowNext} alt="" />
         </div>
     )
 }
