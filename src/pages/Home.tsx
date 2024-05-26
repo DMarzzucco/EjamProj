@@ -10,9 +10,9 @@ function Home() {
     return (
         <>
             <section className="w-full h-auto flex flex-col justify-center items-center">
-                <div className="flex flex-col justify-center items-center">
-                    <h1 className="m-0 text-48">Wait ! your order in progress.</h1>
-                    <p className="m-0 text-24 text-LoremP">Lorem ipsum dolor sit amet, consectetur adipiscing </p>
+                <div className="flex flex-col justify-center items-center Res0.1:text-center">
+                    <h1 className="m-0 text-48 Res0.1:text-32">Wait ! your order in progress.</h1>
+                    <p className="m-0 text-24 text-LoremP Res0.1:text-16">Lorem ipsum dolor sit amet, consectetur adipiscing </p>
                 </div>
                 <div className="w-full my-4 h-40 flex flex-row justify-center items-center">
                     <ChekItems src={CheckLogo} text={"Step 1 : Cart Review"} textRes={"Cart Review"} />
