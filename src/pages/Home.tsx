@@ -1,11 +1,6 @@
-import Img4Logo from "../../public/img/img4.png";
-import GroupLogo from "../../public/img/Group 1000004656.png";
-import Img6Logo from "../../public/img/image 6.png";
-import CheckLogo from "../assets/Vector/GreenChek.png";
-import Nm3Logo from "../assets/Vector/Nm3.png";
-import Nm4Logo from "../assets/Vector/Nm4.png";
 
-import { ChekItems, Comp5, Comp6, Comp7, Profile } from "../items/items";
+import { CheckLogo, GroupLogo, Img4Logo, Img6Logo, Nm3Logo, Nm4Logo } from "../assets/img";
+import { ChekItems, Comp5, Comp6, Comp7, Profile } from "../components/asset/items";
 function Home() {
     return (
         <>
@@ -70,7 +65,7 @@ function Home() {
                             </div>
                         </div>
                         {/* comp7 */}
-                        <Comp7/>
+                        <Comp7 />
                         <div className="flex mb-2 flex-row justify-start items-center w-full">
                             <img className="Res1:hidden" width={88} height={88} src={Img6Logo} alt="" />
                             <img className="Res1:block hidden mb-8 " width={48} height={48} src={Img6Logo} alt="" />

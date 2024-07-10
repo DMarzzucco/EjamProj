@@ -1,14 +1,8 @@
 import Slider, { Settings } from "react-slick";
 import "slick-carousel/slick/slick.scss";
 import "slick-carousel/slick/slick-theme.scss"
-import clariFonLogo from '../../public/img/600a41c73b670a97ae1d4f47_Clarifion_Logo.png';
-import vec1Logo from "../assets/Vector/vec1.png";
-import vec2Logo from "../assets/Vector/vec2.png";
-import vec3Logo from "../assets/Vector/vec3.png";
-import vec4Logo from "../assets/Vector/vec4.png";
-import McLog from "../assets/McAfree.png";
-import NortonLogo from "../assets/norton-antivirus-logo 1.png";
-import { HeaderItems, NextBoton, PrevBoton } from '../items/items';
+import { HeaderItems, NextBoton, PrevBoton } from '../asset/items';
+import { clariFonLogo, McLog, NortonLogo, vec1Logo, vec2Logo, vec3Logo, vec4Logo } from "../../assets/img";
 
 const Header: React.FC = () => {
     const Setting: Settings = {

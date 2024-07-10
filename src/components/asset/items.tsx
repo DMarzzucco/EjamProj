@@ -1,14 +1,31 @@
-import ProfileImage from "../../public/Rectangle 1127.png"
-import StartLogo from "../assets/Vector/Start.png";
-import VerifyLogo from "../assets/Vector/verify 1.png";
-import ArrowPrev from "../assets/Vector/Arrow1.png";
-import ArrowNext from "../assets/Vector/Arrow2.png";
-import Comp5Item from "../assets/Comp5.png";
-import TirkLogo from "../assets/Vector/tick-circle.png";
-import { ArrowsProps, HeaderProps, ListProps, Size } from "../Interfaces/Interfaces";
-import { Link } from "react-router-dom";
-import { ArrowBtn, CardsComp, LockDark } from "../assets/Img";
 
+import { Amexlg, Applg, ArrowB, ArrowNext, ArrowPrev, Comp5Item, Goglg, LockD, Masterlg, Paylg, ProfileImage, Shoplg, StartLogo, TirkLogo, VerifyLogo, Visalg } from "../../assets/img";
+import { ArrowsProps, HeaderProps, ListProps, Size } from "../../Interfaces/Interfaces";
+import { Link } from "react-router-dom";
+
+export const ArrowBtn: React.FC = ({ }) => {
+    return (
+        <><img className="w-16 Res3:h-16 ml-4" src={ArrowB} alt="" /></>
+    )
+}
+export const LockDark: React.FC = ({ }) => {
+    return (
+        <><img className="w-12  " src={LockD} alt="" /></>
+    )
+}
+export const CardsComp: React.FC = ({ }) => {
+    return (
+        <div className="w-180 Res1:w-289 Res1:mt-2 border-l Res1:border-l-0 Res1:border-t Res1:py-2 border-greySky ml-3 Res1:ml-0 pl-3 Res1:pl-0 flex flex-row justify-center items-center">
+            <img src={Visalg} alt="" />
+            <img src={Shoplg} alt="" />
+            <img src={Paylg} alt="" />
+            <img src={Masterlg} alt="" />
+            <img src={Goglg} alt="" />
+            <img src={Applg} alt="" />
+            <img src={Amexlg} alt="" />
+        </div>
+    )
+}
 // comp1
 export const HeaderItems: React.FC<HeaderProps> = ({ src, text }) => {
     return (
@@ -142,14 +159,14 @@ export const Comp7: React.FC = ({ }) => {
             <div className="py-2 rounded my-3 flex flex-row Res1:flex-col justify-center items-center w-full border">
                 {/* text */}
                 <div className="flex flex-row justify-center items-center">
-                    <p  className="text-12 text-LoremP mr-3 pr-3 border-r border-greySky ">Free shipping</p>
+                    <p className="text-12 text-LoremP mr-3 pr-3 border-r border-greySky ">Free shipping</p>
                     <div className=" flex flex-row justify-center items-center w-194">
-                        <LockDark/>
-                        <p  className="ml-2 text-12 text-LoremP ">Secure 256-bit SSL encryption.</p>
+                        <LockDark />
+                        <p className="ml-2 text-12 text-LoremP ">Secure 256-bit SSL encryption.</p>
                     </div>
                 </div>
                 {/* carts */}
-                <CardsComp/>
+                <CardsComp />
             </div>
             {/*  */}
             <Link to="#" className="text-redAlert underline text-18 Res3:text-12">

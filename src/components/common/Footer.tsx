@@ -1,5 +1,5 @@
-import LockLogo from "../assets/Vector/lock.png";
-import { FooterItems } from "../items/items";
+import { LockLogo } from "../../assets/img";
+import { FooterItems } from "../asset/items";
 
 function Footer() {
     return (
